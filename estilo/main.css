@@ -1,0 +1,152 @@
+:root
+{
+	--vermelho: red;
+	--preto: black;
+}
+
+/**/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*
+ELEMENTOS BASE
+*/
+
+.container, .filme-principal .botoes
+{
+	margin-left: 2.5%;
+	width: 95%;
+}
+
+body
+{
+	background-color: var(--preto);
+	font-family: Arial, Times, Serif;
+	color: white;
+}
+
+header .container
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .logo
+{
+	color: var(--vermelho);
+	font-family: 'Arial Black', Times;
+	font-size: 40px;
+}
+
+header nav a
+{
+	text-decoration: none;
+	margin-right: 10px;
+	color: #aaa;
+}
+
+header nav a:hover
+{
+	color: #fff;
+}
+
+
+/*
+FILME PRINCIPAL
+*/
+
+.filme-principal
+{
+	font-size: 16px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),	url('../imagens/fundo.jpg');
+	height: 600px;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.filme-principal .container
+{
+	width: 60%;
+}	
+
+.filme-principal .descricao
+{
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.titulo
+{
+	margin-top: 15%;
+	font-size: 40px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+}
+
+.filme-principal .botoes button
+{
+	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+	padding: 15px 30px;
+	color:  white;
+	margin-right: 15px;
+	font-size: 12px;
+	cursor: pointer;
+	transition: .5s ease all;
+}
+
+.filme-principal .botoes button:hover
+{
+	background-color: rgba(255, 255, 255, 0.5);
+	color:  black;
+}	
+
+.botoes button i
+{
+	margin-right: 8px;
+}
+
+.box-filme
+{
+	height: 100%;
+	width:  100%;
+	display: block;
+}
+
+.owl-carousel .item
+{
+	height: auto;
+	overflow: hidden;
+
+}
+
+.carrossel-filmes
+{
+	margin-top: 15px;
+	margin-left: 2.5%;
+	width: 95%;
+}
+
+.box-filme
+{
+	display: block;
+	opacity: 1;	
+	transition: .5s all;
+}
+
+.item video
+{
+	display: none;
+	opacity: 1;
+	transition: .5s all;
+	width: 100%;
+}
